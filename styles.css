@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-align: center; 
+    height: 100vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: hsl(0, 0%, 100%);
+    margin: 0
+}
+
+main {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 25px -1px rgba(0,0,0,0.42);
+}
+
+.res {
+    width: 50%;
+    text-align: left;
+}
+
+.res-summary div {
+    width: 87%;
+    display: flex;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.res-summary div img {
+    margin: 0 15px
+}
+
+button {
+    margin-top: 10px;
+    width: 87%;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    background: hsl(224, 30%, 27%);
+    margin-bottom: 35px;
+}
+
+.dgb {
+    color: hsl(224, 30%, 27%);
+    
+}
+
+.dgba {
+    color: hsl(224, 30%, 27%, 0.5);
+}
+
+p {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.marks {
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.ur-res {
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 40px;
+    padding: 18px 25px;
+    border-radius: 20px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+}
+
+.mr-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 30px;
+    background-image: linear-gradient( hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0) );
+    border-radius: 50%;
+}
+
+.mr-circle h1 {
+    margin: 0;
+    font-size: 50px
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        width: 600px;
+        height: 400px;
+    }
+    
+    .ur-res {
+        padding: 0px 15px;
+        height: 400px;
+    }
+
+    .ur-res h1, .ur-res h3 {
+        margin: 20px;
+    }
+
+    .res-summary div {
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .score {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 491px) {
+    
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+        display: block;
+        padding: 0;
+        margin: 0;
+        border-radius: none;
+    }
+
+    .ur-res, .res {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    } 
+
+    .res-summary {
+        text-align: center;
+    }
+
+    .res-summary div {
+        margin: 10px auto
+    }
+
+    .ur-res h3:first-child {
+        padding-top: 50px;
+    }
+
+    .ur-res {
+        border-radius: 0px 0px 20px 20px;
+        padding-top: 1px;
+        padding-bottom: 40px;
+    }
+
+    .attribution {
+        display: none;
+    }
+}
